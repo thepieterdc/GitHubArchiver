@@ -50,7 +50,7 @@ if __name__ == '__main__':
     repositories = set()
 
     page = 1
-    while page < 100:
+    while True:
         url = f"{github_server}/user/repos?page={page}"
         logging.info(f"Fetching {url}")
 
